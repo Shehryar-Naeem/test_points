@@ -1,0 +1,27 @@
+.alert_container{
+    background: var(--leaderboard-bg-color);
+    padding: 10px;
+    border-radius: var(--card-btn-border-radius);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+}
+.alert_container > .alet-icon{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #505050;
+    border-radius: var(--border-md-radius);
+    color: #505050;
+    font-size: 12px;
+}
+.alert_container > .text{
+    font-size: var(--title-md-p-font-size);
+    font-weight: 600;
+    line-height: var(--line-md-height);
+    text-transform: uppercase;
+    color: #505050;
+}

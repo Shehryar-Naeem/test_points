@@ -1,0 +1,27 @@
+.address_tap {
+    position: absolute;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--border-color) !important;
+    padding: 2px 7px !important;
+
+    height: 22px;
+    border-radius: var(--menu-border-radius);
+    background-color: var(--body-bg-color);
+    display: flex;
+    column-gap: 05px;
+    align-items: center;
+    right: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.address_tap > .text {
+    font-size: 12px;
+   
+    font-weight: 800;
+    color: var(--body-bg-color);
+    text-transform: uppercase;
+  }

@@ -1,0 +1,126 @@
+.progress_container {
+  width: 100%;
+  background-color: var(--menu-list-bg-color);
+  display: flex;
+  flex-direction: column;
+
+  row-gap: var(--progress-pad);
+  padding: var(--progress-pad);
+  border-radius: var(--border-radius);
+}
+.wallet_with_rank {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.address_container {
+  display: flex;
+  align-items: center;
+  column-gap: 07px;
+}
+.address_container > span > .wallet_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.yellow {
+  color: var(--border-color);
+  font-size: var(--card-disc-font-size);
+}
+.side_rank > .rank {
+  
+  font-size: 12px;
+  font-weight: 800;
+  line-height: var(--line-height);
+  text-transform: uppercase;
+
+  color: var(--body-bg-color);
+}
+.side_rank > .rank > span {
+  display: block;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f8f452 0%, #fdfa9e 100%);
+}
+.progress_bar{
+    position: relative;
+}
+.progress_bar> .bar{
+    width: 100%;
+    
+    height: 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--body-bg-color);
+}
+.progress_bar > .progress_percentage{
+    position: absolute;
+    left: 0;
+    border-radius: var(--border-radius);
+
+    top: 0;
+    background-color: var(--border-color);
+    /* width: 50%; */
+    height: 100%;
+}
+.progress_stats_container{
+    display: flex;
+    flex-direction: column;
+}
+.progress_stats_container >.stats{
+    display: flex;
+    justify-content: space-between;
+}
+.progress_stats_container >.stats >.txt{
+    text-transform: uppercase;
+    font-size: var(--card-disc-font-size);
+    color: var(--card-disc-color);
+    font-weight: 400;
+}
+.progress_stats_container >.stats >.points{
+    text-transform: uppercase;
+    font-size: var(--card-disc-font-size);
+    color: var(--body-text-color);
+    font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+.progress_container{
+    padding: var(--progress-md-pad);
+    row-gap: var(--progress-md-pad);
+    border-radius: var(--border-md-radius);
+}
+  .side_rank > .rank {
+    flex: 1;
+
+    font-size: var(--title-md-span-font-size);
+    font-weight: 500;
+  }
+  .side_rank > .rank > span {
+    display: flex;
+    width: 65px;
+    height: 20px;
+
+    letter-spacing: 1px;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+  }
+  .progress_stats_container >.stats >.txt{
+    
+    font-size: var(--card-md-disc-font-size);
+  
+}
+.progress_stats_container >.stats >.points{
+  
+    font-size: var(--card-md-disc-font-size);
+    
+ 
+}
+}

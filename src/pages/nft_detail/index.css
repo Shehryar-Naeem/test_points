@@ -1,0 +1,295 @@
+.nft_detail_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+}
+.nft_details {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 40px;
+  padding: 24px;
+}
+.nft_details > .img_container {
+  flex: 0.8;
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  /* height: 500px; */
+}
+.nft_details > .img_container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nft_details > .content_container {
+  padding: 17px 0;
+  flex: 1;
+}
+.content_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.detail_header_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.detail_header_container > .detail_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail_header_container > .detail_header > h4 {
+  font-weight: 700;
+  font-size: var(--detail-heading-nft-font-size);
+  line-height: var(--line-height);
+  text-transform: uppercase;
+  color: var(--border-color);
+}
+.detail_header_container > .detail_header > span {
+  background: var(--border-color);
+  color: #000;
+  padding: 3px 18px;
+  font-size: var(--card-btn-font-size);
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: var(--card-btn-border-radius);
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.title > h3 {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  line-height: 29px;
+  color: var(--body-text-color);
+}
+.title > span {
+  font-size: var(--title-span-font-size);
+  font-weight: 600;
+  line-height: var(--line-height);
+  text-transform: uppercase;
+  color: var(--body-text-color);
+}
+.create_section {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-left: var(--headline-pad);
+  border: var(--std-border-size) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+.create_section > p {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+  font-size: var(--title-p-font-size);
+  text-transform: uppercase;
+  color: var(--border-color);
+  word-wrap: break-word;
+  font-weight: 600;
+}
+.create_section > .points{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 2px;
+    background-color: var(--border-color);
+    color: #000;
+    padding: var(--points-pad);  
+}
+.create_section > .points > span{
+    font-size: 17px;
+    line-height: var(--line-height);
+    font-weight: 900;
+}
+.trait_container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 07px;
+  
+}
+.trait_container >h4{
+  font-size: var(--card-heading-font-size);
+  font-weight: 700;
+  line-height: var(--line-height);
+  text-transform: uppercase;
+  color: var(--card-disc-color);
+
+}
+.rarity_container{
+  display: flex;
+  column-gap: 07px;
+  row-gap: 07px;
+
+}
+.rarity_container > .rarity_box{
+ flex: 1;  
+ border: var(--box-border-size) solid #CFDBD5;
+ border-radius: var(--border-radius);
+ padding:05px 15px;
+ display: flex;
+ flex-direction: column;
+ row-gap: 05px;
+}
+.rairt_box_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rairt_box_header > .text{
+  font-size: var(--title-p-font-size);
+  font-weight: 400;
+  line-height: var(--line-height);
+  text-transform: capitalize;
+  color: #909090;
+}
+.rarity-disc > span{
+  font-size: var(--title-span-font-size);
+  font-weight: 400;
+  line-height: var(--line-height);
+  text-transform: capitalize;
+  color: var(--body-text-color);
+}
+.rarity-disc{
+  padding: 0;
+}
+.rarity_container > .rarity_box.active{
+   
+  border-color: var(--border-color);
+  
+  
+  
+  }
+
+@media screen and (max-width:768px){
+  .nft_detail_container {
+   
+    row-gap: var(--layout-md-row-gap);
+    padding: var(--layout-md-pad);
+  }
+  .nft_details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 0;
+  }
+  .nft_details > .img_container {
+    flex: 0.5;
+    border-radius: var(--card-md-border-radius);
+    /* max-width: 170px; */
+    width: 100%;
+    margin: auto;
+    /* max-height:170px ; */
+
+    
+  }
+  
+  .nft_details > .content_container {
+    padding: 5px 0;
+    flex: 1;
+  }
+  .content_container {
+   
+    row-gap: var(--layout-md-row-gap);
+  }
+  .detail_header_container {
+
+    row-gap: 05px;
+  }
+
+  .detail_header_container > .detail_header > h4 {
+    font-weight: 600;
+    font-size: var(--detail-heading-md-nft-font-size);
+
+  }
+  .detail_header_container > .detail_header > span {
+   
+    padding: 2px 14px;
+    font-size: var(--card-md-btn-font-size);
+    font-weight: 900;
+
+    border-radius: var(--card-md-btn-border-radius);
+  }
+  
+
+  .title > h3 {
+    font-size: var(--title-md-font-size);
+    font-weight: 600;
+    
+  }
+  .title > span {
+    font-size: var(--title-md-span-font-size);
+    font-weight: 600;
+    
+  }
+  .create_section {
+    overflow: hidden;
+    padding-left: var(--headline-md-pad);
+    border: var(--box-border-size) solid var(--border-color);
+    border-radius: var(--border-radius);
+  }
+  .create_section > p {
+     
+    font-size: var(--title-md-p-font-size);
+
+    font-weight: 500;
+  }
+  .create_section > .points{
+     
+    
+      padding: var(--md-points-pad);  
+  }
+  .create_section > .points > span{
+      font-size: 12px;
+      line-height: var(--line-height);
+      font-weight: 600;
+  }
+  .trait_container{
+
+    row-gap: 05px;
+    
+  }
+  .trait_container >h4{
+    font-size: var(--card-md-heading-font-size);
+    font-weight: 600;
+  
+  
+  }
+  .rarity_container{
+   
+    column-gap: 05px;
+    row-gap: 05px;
+  
+  }
+  .rarity_container > .rarity_box{
+   
+   border-radius: var(--border-md-radius);
+   padding:0 var(--headline-md-pad);
+  
+   row-gap: 0;
+  }
+ 
+
+  .rairt_box_header > .text{
+    font-size: var(--title-md-p-font-size);
+    font-weight: 300;
+    line-height:0;
+   
+  }
+  .rarity-disc > span{
+    font-size: var(--title-md-span-font-size);
+    font-weight: 300;
+    line-height: var(--line-md-height);
+  }
+}

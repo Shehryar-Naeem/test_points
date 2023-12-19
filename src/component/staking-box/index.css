@@ -1,0 +1,209 @@
+.card {
+  border: 3px solid var(--border-color);
+  border-radius: var(--card-border-radius);
+  position: relative;
+  overflow: hidden;
+}
+.top_bar{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 5px;
+ 
+ 
+  
+}
+.top_bar > input[type="checkbox" i]{
+  margin-left: 10px;
+  background: var(--menu-list-bg-color);
+  outline-color: var(--border-color);
+  width: 25px;
+  border: 1px solid var(--border-color);
+
+}
+.staking_days {
+  border: var(--box-border-size) solid var(--border-color);
+  padding: 0 7px;
+ 
+  height: 22px;
+  border-radius: var(--menu-border-radius);
+  background-color: var(--body-bg-color);
+  display: flex;
+  column-gap: 05px;
+  align-items: center;
+ 
+  margin-top: 10px;
+  margin-right: 10px;
+  line-height: 12px;
+}
+.staking_days > .text {
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+  color: var(--border-color);
+  text-transform: uppercase;
+}
+.staking_days > .icon {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  color: var(--border-color);
+}
+a{
+  overflow: hidden;
+}
+.card_img {
+  
+  cursor: pointer;
+  height: var(--card-img-height);
+  overflow: hidden;
+}
+.card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: var(--card-row-gap);
+  padding: var(--card-pad);
+  background: var(--menu-list-bg-color);
+
+}
+.card_content {
+  display: flex;
+  flex-direction: column;
+}
+.card_content > h4 {
+  font-size: var(--card-heading-font-size);
+  font-weight: 700;
+  color: #fff;
+}
+.card_content > span {
+  font-size: var(--card-disc-font-size);
+  font-weight: 700;
+  line-height: 21px;
+  color: var(--card-disc-color);
+}
+.card_btn {
+ 
+  
+
+ outline: none;
+  color:var(--body-bg-color) !important;
+
+  padding: var(--card-btn-pad);
+  font-size: var(--card-btn-font-size);
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: var(--card-btn-border-radius);
+  cursor: pointer;
+}
+.card_btn.yellow{
+  background: var(--border-color) !important;
+}
+.card_btn.white{
+  background-color: var(--body-text-color) !important;
+}
+.stake_status {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  width: 100%;
+  column-gap: 2px;
+  border-radius: var(--card-btn-border-radius);
+
+  cursor: pointer;
+  overflow: hidden;
+
+  align-items: center;
+}
+.stake_status.yellow {
+  border: var(--box-border-size) solid var(--border-color);
+  color: var(--border-color);
+}
+.stake_status.white {
+  border: var(--box-border-size) solid var(--body-text-color);
+  color: var(--body-text-color);
+}
+.stake_status.white.disable {
+  opacity: 0.5;
+}
+.stake_status > .text {
+  flex: 0.9;
+  text-align: center;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding: var(--card-btn-pad);
+
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.stake_status > .icon {
+  text-align: center;
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2px;
+
+  padding: var(--points-pad);
+}
+.diamond_icon{
+  width: 35px;
+ 
+}
+.stake_status > .icon.yellow {
+  background-color: var(--border-color);
+  color: #000;
+}
+.stake_status > .icon.white {
+  background-color: var(--body-text-color);
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .card{
+      border: var(--box-border-size) solid var(--border-color);
+  }
+  .card_img{
+      height: var(--card-md-img-height);
+  }
+  .card_body{
+      row-gap: var(--card-md-row-gap);
+      padding: var(--card-md-pad);       
+  }
+  .card_content > h4{
+      font-size: var(--card-md-heading-font-size);
+      font-weight: var(--card-md-font-weight);
+      color: #fff;
+  }
+  .card_content > span{
+      font-size: var(--card-md-disc-font-size);
+      font-weight: var(--card-md-font-weight);
+  }
+  .card_btn{
+      padding: var(--card-md-btn-pad);
+      font-size: var(--card-md-btn-font-size);
+      font-weight: var(--card-md-font-weight);
+      border-radius: var(--card-md-btn-border-radius);
+  }
+  .stake_status {
+    column-gap: 1px;
+    border-radius: var(--card-md-btn-border-radius);
+  }
+
+  
+ 
+  .stake_status > .text {
+    padding: var(--card-md-btn-pad);
+    font-weight: 500;
+    font-size: var(--detail-heading-nft-font-size);
+ 
+  }
+  .stake_status > .icon {
+    column-gap: 1px;
+    padding: var(--md-points-pad);
+  }
+  
+}

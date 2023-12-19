@@ -1,0 +1,137 @@
+:root {
+  --layout-pad:30px;
+  --layout-md-pad:20px;
+  
+  --layout-row-gap: 20px;
+  --btw-card-gap:15px;
+  --btw-md-card-gap:10px;
+  --layout-md-row-gap: 10px;
+  --body-bg-color: rgba(0, 0, 0, 1);
+  --body-text-color: rgba(255, 255, 255, 1);
+  --side-menu-width: 420px;
+  --side-menu-bg-color: rgba(0, 0, 0, 1);
+  --side-menu-pad: 21px;
+  --border-color: rgba(199, 246, 54, 1);
+  --hover-bg-color: rgba(16, 16, 16, 0.8);
+  --menu-list-bg-color: rgb(16, 16, 16);
+  --menu-text-size: 20px;
+  --menu-md-text-size: 12px;
+  --btn-bg-color: rgba(199, 246, 54, 1);
+  --menu-border-radius: 5px;
+  --menu-md-border-radius: 3px;
+  --btn-pad: 9px;
+  --btn-md-pad: 6px;
+  --btn-font-size: 16px;
+  --btn-md-font-size: 14px;
+  --card-border-radius: 8px;
+  --card-md-border-radius: 5px;
+  --card-row-gap: 13px;
+  --card-md-row-gap: 10px;
+  --card-pad: 18px;
+  --card-md-pad:08px;
+  --card-img-height: 270px;
+  --card-md-img-height: 180px;
+  --card-heading-font-size: 20px;
+  --card-md-heading-font-size: 16px;
+  --card-disc-font-size: 14px;
+  --card-md-disc-font-size: 12px;
+  --card-md-font-weight: 600;
+  --card--font-weight: 700;
+  --card-disc-color: #505050;
+  --staking-btn-bg-color: rgba(80, 80, 80, 1);
+  
+  --leaderboard-bg-color: rgba(16, 16, 16, 1);
+  --card-btn-border: 3px;
+  --stake-now-btn-color: #fff;
+  --card-btn-pad: 4px 20px;
+  --card-md-btn-pad: 2px 6px;
+  --board-padding:15px;
+  --board-md-padding:07px;
+  --card-btn-border-radius: 5px;
+  --card-md-btn-border-radius: 3px;
+  --card-btn-font-size: 11px;
+  --card-md-btn-font-size: 08px;
+  --detail-heading-nft-font-size: 12px;
+  --detail-heading-md-nft-font-size: 10px;
+  --line-height: 21px;
+  --line-md-height: 10px;
+  --title-font-size: 26px;
+  --title-md-font-size: 18px;
+  --title-span-font-size: 16px;
+  --title-md-span-font-size: 10px;
+  --title-p-font-size: 14px;
+  --title-md-p-font-size: 12px;
+  --std-border-size: 2px;
+  --box-border-size: 1px;
+  --border-radius: 8px;
+  --border-md-radius: 5px;
+  --headline-pad: 15px;
+  --headline-md-pad: 12px;
+  --points-pad: 10px;
+  --md-points-pad: 07px;
+  --header-img-size:170px;
+  --popup-card-width: 579px;
+  --popup-card-height: 558px;
+  --popup-card-pad:35px;
+  --popup-heading-font-size: 40px;
+  --progress-pad:18px;
+  --progress-md-pad:12px;
+  
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--body-text-color);
+}
+.light_weight{
+  font-weight: 400 !important;
+}
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  min-height: 100vh;
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+  transition: all 0.3s linear ;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.icon-style {
+  font-weight: 800;
+  font-size: 15px;
+}
+.icon-styles {
+  font-size: 20px;
+}
+@media screen and (max-width:768px) {
+  .icon-style {
+    
+    font-size: 12px;
+  }
+  .icon-styles {
+    font-size: 15px;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,34 @@
+.my-nft_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--layout-row-gap);
+  padding: var(--layout-pad);
+}
+.card_container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  column-gap: var(--btw-card-gap);
+  row-gap: var(--btw-card-gap);
+}
+
+@media screen and (max-width: 768px) {
+  .my-nft_container {
+    padding: var(--layout-md-pad);
+    row-gap: var(--layout-md-row-gap);
+  }
+  .card_container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 0;
+    row-gap: var(--btw-md-card-gap);
+    column-gap: var(--btw-md-card-gap);
+  }
+  
+}
